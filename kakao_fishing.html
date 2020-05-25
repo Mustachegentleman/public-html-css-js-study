@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+    <title></title>
+  </head>
+  <body>
+    <a id="create-kakao-link-btn" href="javascript:;">
+    <input type="button" name="create-kakao-link-btn" value="공유하기">
+</a>
+<script type="text/javascript">
+  // input your appkey
+  Kakao.init('aeab61876ff60f6b709ad5471df7ea7f')
+  Kakao.Link.createDefaultButton({
+    container: '#create-kakao-link-btn',
+    objectType: 'text',
+    text:
+      '우와',
+    link: {
+      mobileWebUrl:
+        'http://localhost',
+      webUrl:
+        'http://localhost',
+    },
+  })
+</script>
+  </body>
+</html>
